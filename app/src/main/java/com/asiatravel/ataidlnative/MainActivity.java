@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             try {
                 int result = dataService.add(10, 20);
                 String info = dataService.getName();
-                resultTextView.setText("result is" + result + " " + " info is" + info);
+                resultTextView.setText("result is " + result + "\n" + "info is " + info);
             } catch (RemoteException e) {
                 Log.d(TAG, "onServiceConnected: e-->" + e.getMessage());
             }
